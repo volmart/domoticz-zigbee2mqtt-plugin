@@ -24,6 +24,8 @@ from adapters.lumi.WXKG03LM import WXKG03LM
 from adapters.lumi.WXKG11LM import WXKG11LM
 from adapters.lumi.WXKG12LM import WXKG12LM
 from adapters.lumi.ZNCZ02LM import ZNCZ02KM
+from adapters.lumi.QBKG12LM import QBKG12LM
+
 from adapters.samsung.sensor_arrival import SensorArrival
 from adapters.philips.hue_dimmer_switch import HueDimmerSwitch
 from adapters.philips.hue_motion_sensor import HueMotionSensor
@@ -215,7 +217,7 @@ adapter_by_model = {
     'QBCZ11LM': Plug,                   # Xiaomi Aqara socket Zigbee (on/off, power measurement)
     'QBKG03LM': AqaraDoubleWiredSwitch, # Xiaomi Aqara double key wired wall switch
     'QBKG04LM': OnOffSwitchAdapter,     # Xiaomi Aqara single key wired wall switch
-    'QBKG12LM': AqaraDoubleWiredSwitch, # Xiaomi Aqara double key wired wall switch
+    'QBKG12LM': QBKG12LM,               # Xiaomi Aqara double key wired wall switch
     'RTCGQ01LM': MotionSensorAdapter,   # Xiaomi MiJia human body movement sensor
     'RTCGQ11LM': SensorMotionAq2,       # Xiaomi Aqara human body movement and illuminance sensor 
     'SJCGQ11LM': SensorWleak,           # Xiaomi Aqara water leak sensor
